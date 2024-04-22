@@ -7,6 +7,10 @@ model = pickle.load(open('HFP.pkl','rb'))
 app = Flask(__name__)
 
 @app.route('/')
+def home():
+    return "Hello World"
+
+@app.route('/predict',methods=['POST'])
 def predict():
     age = request.form.get("age")
     anaemia = request.form.get("anaemia")
