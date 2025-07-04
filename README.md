@@ -1,2 +1,2 @@
 # Personal_Projects
-These are my personal projects.
+This is a heart failure prediction system project
